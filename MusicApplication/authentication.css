@@ -1,0 +1,253 @@
+@font-face {
+    font-family: "MyCustom";
+    src: url(./Fonts/cheerful-summer/Cheerful\ Summer.ttf);
+}
+@font-face {
+    font-family: MyCustom1;
+    src: url(./Fonts/rankle-free/Rankle\ Free.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.auth-container{
+    margin: 0px;
+    padding: 5px;
+    background-color: transparent;
+    height: 100%;
+    width: 90%;
+    
+
+
+}
+.auth-content{
+    background-color: transparent;
+    padding: 0px;
+    width: 90%;
+    height: 100%;
+    
+}
+form{
+    border: none;
+}
+.auth-content h1{
+    font-family: MyCustom;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-bottom:100px;
+
+}
+
+.auth-content img{
+    height: 150px;
+    width:150px;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    cursor: pointer;
+    animation: flip 1s 1;
+
+
+}
+#logo-name{
+    font-family: MyCustom1;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    animation: step 1s 1;
+}
+@keyframes step{
+    0%{
+        width: 40%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+label{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: chocolate;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+
+    letter-spacing: 2px;
+}
+.auth-content input{
+    margin-left: 30px;
+    font-size: 20px;
+    color: black;
+    padding: 5px 40px;
+   
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.auth-content input:focus{
+    outline: none;
+}
+.auth-content input::placeholder{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+#cbox{
+    margin-top: 30px;
+    height: 25px;
+    width: 20px;
+}
+#spads{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#fpass{
+    position: absolute;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#btn{
+    margin: 20px;
+    padding: 10px 130px;
+    border: none;
+    color: white;
+    background-color: orange;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-family:MyCustom1;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 23px;
+    box-shadow: 0px 0px 8px black;
+}
+#btn:hover{
+    color: black;
+    transform: translateY(10px);
+}
+#ath-or{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 60px;
+}
+footer{
+    background-color: transparent;
+    height: 0;
+    width: 100%;
+}
+#gbtn,#fbtn{
+    font-size: 20px;
+    border: 1px solid blue;
+    background-color: black;
+    padding: 10px 100px;
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 50px;
+    color: orangered;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px orangered;
+    /* animation: typing 1s steps(10, end), blink-caret .5s step-end infinite; */
+   
+}
+
+#gbtn:active,#fbtn:active{
+    background-color:orange;
+    color: black;
+    transform: translateY(10px);
+}
+/* }
+.fb{
+    font-size: 20px;
+    border: 1px solid blue;
+    background-color: black;
+    padding: 20px 60px;
+    justify-content: center;
+    margin-left: 30px;
+    color: orangered;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+
+    /* animation: typing 1s steps(10, end), blink-caret .5s step-end infinite; */
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+@keyframes flip {
+    0% {
+      transform: perspective(400px) rotateY(0deg); /* Starting position */
+    }
+    100% {
+      transform: perspective(400px) rotateY(180deg); /* Ending position */
+    }
+  }
+
+  #visit{
+    font-size: 20px;
+    margin-left: 180px;
+    font-family: MyCustom1;
+    letter-spacing: 4px;
+    font-weight: bold;
+
+  }
+  .insta{
+    padding: 10px;
+    margin-left: 120px;
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+  }
+  .fa-instagram:active{
+    box-shadow: 0px 0px 20px rgb(245, 108, 131),0px 0px 40px palevioletred ;
+  }
+
+  
+  .ln{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+
+  }
+  .fa-linkedin-in:active{
+    box-shadow: 0px 0px 20px blue,0px 0px 40px blue ;
+  }
+  .wp{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+
+
+  }
+  .fa-whatsapp:active{
+    box-shadow: 0px 0px 20px green,0px 0px 40px rgb(0, 53, 0) ;
+  }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+</head>
+<body>
+  <h1>User Profile</h1>
+  <div id="user-email"></div> <!-- Element to display user email -->
+  
+  <!-- Other content of profile.html -->
+  
+  <script src="profile.js"></script> <!-- JavaScript file to handle displaying user email -->
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const userEmail = sessionStorage.getItem('userEmail');
+  if (userEmail) {
+    // Display the user's email in a div or any other element
+    const emailDisplay = document.getElementById('user-email');
+    emailDisplay.textContent = userEmail;
+  } else {
+    // Handle case where user email is not available
+    console.log('User email not found.');
+  }
+});
+
+    </script>
+</body>
+</html>

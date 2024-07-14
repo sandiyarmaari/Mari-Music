@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "MyCustom";
+    src: url(./Fonts/cheerful-summer/Cheerful\ Summer.ttf);
+}
+@font-face {
+    font-family: MyCustom1;
+    src: url(./Fonts/rankle-free/Rankle\ Free.ttf);
+}
+.container{
+    background-color: rgb(206, 185, 185);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    top: 30%; 
+    left: 20%;
+}
+.content img{
+    height: 200px;
+    width: 300px;
+    margin-left: -25px;
+}
+#logo-id{
+    font-family: MyCustom;
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 100px;
+}
+#logo-id::after{
+    content: "Music";
+    left: 70px;
+    position: absolute;
+}
+.spinner-border{
+    position: absolute;
+    top: 150%;
+    left: 40%;
+ 
+}
